@@ -57,6 +57,7 @@ const TabOptions = ({ activeTab, setActiveTab }) => {
                   className='tab-image'
                 />
               </div>
+              <div className='tab-name'>{tab.name}</div>
             </div>
           );
         })}
