@@ -3,7 +3,7 @@ import './deliveryItem.css';
 
 const DeliveryItem = ({ item }) => {
   return (
-    <>
+    <div>
       <div className='delivery-item-cover'>
         <img
           src={item.cover}
@@ -11,7 +11,8 @@ const DeliveryItem = ({ item }) => {
           className='delivery-item-image'
         />
       </div>
-    </>
+      <div className='delivery-item-title'>{item.title}</div>
+    </div>
   );
 };
 

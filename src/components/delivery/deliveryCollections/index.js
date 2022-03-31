@@ -84,9 +84,9 @@ const settings = {
 
 const DeliveryCollections = () => {
   return (
-    <div className='delivery-collections'>
+    <div className='delivery-collection'>
       <div className='max-width'>
-        <div className='collections-title'>Eat whatever you like</div>
+        <div className='collection-title'>Eat whatever you like</div>
         <Slider {...settings}>
           {deliveryItems.map((item) => {
             return (

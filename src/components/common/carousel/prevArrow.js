@@ -1,6 +1,6 @@
 import React from 'react';
 
-const prevArrow = (props) => {
+const PrevArrow = (props) => {
   const { className, style, onClick } = props;
 
   return (
@@ -22,4 +22,4 @@ const prevArrow = (props) => {
   );
 };
 
-export default prevArrow;
+export default PrevArrow;
