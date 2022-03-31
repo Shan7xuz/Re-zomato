@@ -2,6 +2,7 @@ import React from 'react';
 import './topBrands.css';
 import NextArrow from '../../common/carousel/nextArrow';
 import PrevArrow from '../../common/carousel/prevArrow';
+import Slider from 'react-slick';
 
 const topBrandsList = [
   {
@@ -68,14 +69,33 @@ const topBrandsList = [
 
 const settings = {
   infinite: false,
-  slidesToShow: 4,
+  slidesToShow: 6,
   slidesToScroll: 1,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
 };
 
 const TopBrands = () => {
-  return <div></div>;
+  return (
+    <div className='top-brands max-width'>
+      <div className='collection-title'>Top brands for you</div>
+      <Slider {...settings}>
+        {topBrandsList.map((brand) => {
+          return (
+            <>
+              <div className='top-brands-cover'>
+                <img
+                  src={brand.cover}
+                  alt={brand.time}
+                  className='top-brands-image'
+                />
+              </div>
+            </>
+          );
+        })}
+      </Slider>
+    </div>
+  );
 };
 
 export default TopBrands;
