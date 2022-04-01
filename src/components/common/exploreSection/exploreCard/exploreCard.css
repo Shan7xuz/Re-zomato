@@ -94,7 +94,8 @@
   font-size: 13px;
   font-weight: 600;
   color: var(--primary-bg);
-  background-color: var(--tag-green);
+  /* background-color: var(--tag-green); */
+  background-color: rgb(255, 118, 118);
   border-radius: 6px;
   height: 24px;
 }
